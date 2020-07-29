@@ -43,6 +43,15 @@ body {
     font-display: swap;
 }
 
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
+@font-face {
+    font-family: "Blackout Midnight";
+    src: url("../fonts/Blackout-Midnight.eot?") format("eot"), url("../fonts/Blackout-Midnight.woff") format("woff"), url("../fonts/Blackout-Midnight.ttf") format("truetype"), url("../fonts/Blackout-Midnight.svg#Blackout-Midnight") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 @font-face {
     font-family: 'SoDo Sans';
     src: url('../fonts/SoDoSans-Thin.eot');
@@ -76,7 +85,9 @@ body {
     width: 375px;
     overflow: hidden;
     top: 0;
+    z-index: -1;
 }
+
 /* .headSection.pAdjust{
     height: 108px;
     transition: all .5s ease-out;
@@ -173,6 +184,7 @@ body {
     position: relative;
     width: 102px;
     height: 66px;
+    left: -16px;
 }
 
 /* .cup img {
@@ -181,10 +193,10 @@ body {
 } */
 
 .timeline {
-    background: url(../img/meter_art.png) no-repeat;
+    background: #D5E9E2 url(../img/meter_art.svg) no-repeat;
     width: 100%;
     height: 2171px;
-    background-position: left -86px top;
+    background-position: left -73px top;
     margin-top: 40px;
     text-align: center;
 }
@@ -201,6 +213,7 @@ body {
     left: 69px;
     bottom: -10px;
     transform: rotate(90deg);
+    font-family: "Blackout Midnight";
 }
 
 .cup2 {
@@ -216,13 +229,14 @@ body {
     left: 55px;
     bottom: -10px;
     transform: rotate(90deg);
+    font-family: "Blackout Midnight";
 }
 
 .frameList3 p {
     font-size: 10px;
     color: #000;
     position: absolute;
-    left: 105px;
+    left: 77px;
     bottom: -50px;
     transform: rotate(90deg);
 }
@@ -282,9 +296,9 @@ body {
 }
 
 #trainMotion img {
-    
     transform: translate(0%, 0%);
     transition: all .5s ease-out;
+    width: 813px;
 }
 
 #trainMotion.choocho img {
@@ -299,7 +313,7 @@ body {
 }
 
 #trainMotion2.choocho2 img {
-    
+
     transform: translate(100%, 0%);
     transition: all .5s ease-out;
 }
@@ -354,3 +368,50 @@ uncomment this part if you haven't added this code anywhere else
 	opacity: 0;
 }
 */
+
+
+
+.footercat .catImg {
+    width: 74px;
+}
+
+.footercat img {
+    width: 44px;
+}
+
+.logoTitle img {
+    width: 302px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.cup img {
+    width: 102px;
+}
+
+.cup2 img {
+    width: 114px;
+}
+
+.Dog img {
+    width: 105px;
+}
+
+.footer img {
+    width: 127px;
+}
+
+
+@media(max-width:415px){
+    .container{
+        width: 100%;
+    }
+    .headSection{
+        width: 100%;
+    }
+    .hand img {
+        right: 250px;
+    }
+}
